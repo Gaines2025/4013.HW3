@@ -10,7 +10,7 @@
     </thead>
     <tBody>      
 <?php
-while ($course = $course->fetch_assoc()) {
+while ($course = $courses->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $course['course_id']; ?></td>
