@@ -2,7 +2,7 @@
 function selectCoursesByInstructor($iid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT c.course_ID, course_number, course_description, semester, room, day_time FROM `course` c join section s on s.course_ID = c.course_ID where s.instructor_ID=1");
+        $stmt = $conn->prepare("SELECT c.course_ID, course_number, course_description, semester, room, day_time FROM `course` c join section s on s.course_ID = c.course_ID where s.instructor_ID=?");
         $stmt->bind_param("i", $iid);
         $stmt->execute();
         $result = $stmt->get_result();
