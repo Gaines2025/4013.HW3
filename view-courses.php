@@ -20,7 +20,7 @@ while ($course = $courses->fetch_assoc()) {
     <td>
       <form method="post" action="sections-by-course.php">
         <input type="hidden" name="cid" value="<?php echo $course['course_id']; ?>">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Sections</button>
       </form>
     </td>
   </tr>
