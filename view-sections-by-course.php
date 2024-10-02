@@ -16,12 +16,12 @@
 while ($section = $sections->fetch_assoc()) {
 ?>
   <tr>
-    <td><?php echo $course['course_id']; ?></td>
-    <td><?php echo $course['course_number']; ?></td>
-    <td><?php echo $course['course_description']; ?></td>
-    <td><?php echo $course['course_description']; ?></td>
-    <td><?php echo $course['course_description']; ?></td>
-    <td><?php echo $course['course_description']; ?></td>
+    <td><?php echo $section['course_id']; ?></td>
+    <td><?php echo $section['course_number']; ?></td>
+    <td><?php echo $section['course_description']; ?></td>
+    <td><?php echo $section['course_description']; ?></td>
+    <td><?php echo $section['course_description']; ?></td>
+    <td><?php echo $section['course_description']; ?></td>
   </tr>
 <?php
 }
